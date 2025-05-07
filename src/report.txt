@@ -1,0 +1,18 @@
+AI DM Project - Tina Garrett
+
+It can usually handle, but it does seem to be inconsistent:
+- Tavern social encounters with diverse NPC dialogues.
+- Maintaining game state.
+- Dungeon exploration with descriptions of rooms, items, and traps.
+- Combat resolution (attack rolls, damage calculation, hit/miss outcomes).
+- Complex NPC interactions (merchant bargaining, deceptive characters).
+- Detailed narration of player actions (stealth, persuasion attempts, etc)
+- Automated dice rolls for skills, combat, and saves.
+- Recalling past player interactions to inform NPC reactions.
+- Integrating previously established lore into current storytelling.
+- Tracking quest progress and updating narratives accordingly.
+
+I chose to have temperature = 2 and max_tokens = 100, because I wanted some changes in the stories, and I wanted the responses to not take TOO long.
+
+I have prompts for fights, detailed character creation, merchants, and skill checks.
+My biggest add on is making sure that the character creation is more smooth than our previous labs. I wanted the DM to walk you through each step of making the character before starting the story with attention to your backstory as well. My luck with all of this working every time isn't quite there, but I have gotten it to bring in a sailor knowledge for a sailor character or other sort of things. It is pretty strict with following the character creation. I wanted to better store this with the dnd-character library, but I was having a lot issues with it, so it didn't end up happening. Honestly, being stuck working by myself made this a whole lot harder. 

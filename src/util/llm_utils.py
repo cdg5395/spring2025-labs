@@ -49,6 +49,11 @@ def run_console_chat(**kwargs):
                 ending_match = e.value[1]
                 print('Ending match:', ending_match)
             break
+def is_valid_roll_check(response):
+    # checking for things like skill check or roll for to know when to use this
+    if 'roll for' in response.message.content.lower() or 'skill check' in response.message.content.lower():
+        return True
+    return False
 
 class TemplateChat:
     def __init__(self, template, sign=None, **kwargs):
